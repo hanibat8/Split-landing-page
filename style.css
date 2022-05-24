@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: justify;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s ease-in;
+}
+
+.section-1{
+    background: linear-gradient(
+        rgba(0, 47, 255, 0.45), 
+        rgba(0, 47, 255, 0.45)
+      ), url(./img/ps.jpg); 
+    background-size: 130% 100%;
+}
+
+.section-2{
+    background-image: linear-gradient(
+        rgba(59, 57, 57, 0.595), 
+        rgba(59, 57, 57, 0.595)
+      ),url(img/xbox.jpg); 
+    /*background-size: 100% 100%;*/
+    background-position: left;
+}
+
+.heading{
+    margin-top: 10rem;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+    padding: 1rem 3.5rem;
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn-section1:hover{
+    background: rgb(46, 71, 182);
+    border: 2px solid rgb(46, 71, 182);
+    border: none;
+}
+
+.btn-section2:hover{
+    background: rgb(57, 112, 43);
+    border: 2px solid rgb(57, 112, 43);
+    border: none;
+}
+
+.shrink-section{
+    flex: 1;
+}
+
+.expand-section{
+    flex: 2;
+}
